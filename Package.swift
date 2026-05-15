@@ -27,7 +27,11 @@ let package = Package(
             name: "CocoaMQTT",
             dependencies: ["MqttCocoaAsyncSocket"],
             path: "Source",
-            exclude: ["CocoaMQTTWebSocket.swift"],
+            exclude: [
+                "CocoaMQTTWebSocket.swift",
+                "Info.plist",
+                "PrivacyInfo.xcprivacy",
+            ],
             swiftSettings: [.define("IS_SWIFT_PACKAGE")]
         ),
         .target(
